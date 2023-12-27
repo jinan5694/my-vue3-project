@@ -5,11 +5,14 @@
       <text class="title">{{ title }}</text>
     </view>
     <view>
-      <navigator url="/pages/workspace-detail/index" open-type="navigate">wo detail</navigator>
+      <navigator url="/pages/workspace-detail/index?foo=abc&num=3" open-type="navigate">wo detail</navigator>
       <navigator url="/pages/user-profile/index" open-type="navigate">user profile</navigator>
     </view>
     <view>
       <input class="uni-input" focus placeholder="自动获得焦点" v-model="title" />
+    </view>
+    <view>
+      <tui-button>页面主操作</tui-button>
     </view>
   </view>
 </template>
@@ -22,6 +25,7 @@ const title = ref('Hello')
 
 onShow(() => {
   console.log('index onshow');
+  const page = getCurrentPages()
 })
 onHide(() => {
   console.log('index onhide');
