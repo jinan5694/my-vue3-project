@@ -1,9 +1,38 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "wo list",
+				"app-plus": {
+					// 关闭ios 页面回弹效果
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "login"
+			}
+		},
+		{
+			"path": "pages/workspace-list/index",
+			"style": {
+				"navigationBarTitleText": "wo list"
+			}
+		},
+		{
+			"path": "pages/workspace-detail/index",
+			"style": {
+				"navigationBarTitleText": "wo detail"
+			}
+		},
+		{
+			"path": "pages/user-profile/index",
+			"style": {
+				"navigationBarTitleText": "profile"
 			}
 		}
 	],
