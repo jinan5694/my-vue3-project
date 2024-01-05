@@ -47,5 +47,18 @@
 		"custom": {
 			"tui-(.*)": "thorui-uni/lib/thorui/tui-$1/tui-$1.vue"
 		}
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"text": "组件"
+		}, {
+			"pagePath": "pages/workspace-list/index",
+			"text": "接口"
+		}]
 	}
 }
