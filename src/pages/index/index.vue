@@ -10,10 +10,14 @@
     </view>
     <view>
       <input class="uni-input" focus placeholder="自动获得焦点" v-model="title" />
+      <input type="text">
     </view>
     <view>
       <tui-button>页面主操作</tui-button>
     </view>
+    <uni-card title="基础卡片" extra="额外信息">
+				<text class="uni-body">这是一个基础卡片示例，此示例展示了一个标题加标题额外信息的标准卡片。</text>
+			</uni-card>
   </view>
 </template>
 
@@ -64,5 +68,8 @@ onUnmounted(() => {
 
 .uni-input {
   border: 1px solid red;
+}
+input {
+  background-color: aqua;
 }
 </style>
