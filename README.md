@@ -17,3 +17,6 @@ onLoad((options) => {
 })
 ```
 值都是string类型，建议仅在路由中使用 query 的方式传递少量固定的信息。
+
+
+npx @dcloudio/uvm@latest
